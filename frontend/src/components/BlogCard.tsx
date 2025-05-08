@@ -17,7 +17,7 @@ const BlogCard = ({
     <div className="p-4 border-b border-gray-200 pb-4">
         <div className="flex">
            <div className="flex justify-center flex-col">
-           <Avatar name={authorName} />
+           <Avatar size={5} name={authorName} />
            </div>
             <div className="font-extralight text-gray-700 pl-2">
             {authorName}
@@ -29,7 +29,7 @@ const BlogCard = ({
                 {publishedDate}
                 </div>
         </div>
-        <div className="text-2xl font-bold pt-2 ">
+        <div className="text-2xl font-bold pt-2 pb-4 ">
             {title}
         </div>
         <div className="text-md font-thin text-slate-600">

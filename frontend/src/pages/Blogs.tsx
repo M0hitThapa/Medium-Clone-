@@ -1,9 +1,12 @@
+import Appbar from "../components/Appbar"
 import BlogCard from "../components/BlogCard"
 
 
 const Blogs = () => {
   return (
-   <div className="flex justify-center">
+ <div>
+    <Appbar />
+      <div className="flex justify-center">
      <div className=" max-w-xl ">
         <BlogCard
         authorName={"Mohit"}
@@ -31,6 +34,7 @@ const Blogs = () => {
         />
     </div>
    </div>
+ </div>
   )
 }
 
