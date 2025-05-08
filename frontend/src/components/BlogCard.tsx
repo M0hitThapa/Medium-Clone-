@@ -1,0 +1,55 @@
+import Avatar from "./Avatar";
+
+interface BlogCardProps {
+    authorName:string;
+    title:string;
+    content:string;
+    publishedDate:string;
+}
+
+const BlogCard = ({
+    authorName,
+    title,
+    content,
+    publishedDate
+}: BlogCardProps) => {
+  return (
+    <div className="p-4 border-b border-gray-200 pb-4">
+        <div className="flex">
+           <div className="flex justify-center flex-col">
+           <Avatar name={authorName} />
+           </div>
+            <div className="font-extralight text-gray-700 pl-2">
+            {authorName}
+                </div> 
+                <div className="flex justify-center flex-col pl-2">
+                  <Circle />
+                </div>
+                <div className="pl-2 font-thin text-slate-500">
+                {publishedDate}
+                </div>
+        </div>
+        <div className="text-2xl font-bold pt-2 ">
+            {title}
+        </div>
+        <div className="text-md font-thin text-slate-600">
+            {content.slice(0,100) + "..."}
+        </div>
+        <div className="text-slate-400 text-sm font-thin pt-5">
+           {`${Math.ceil(content.length / 100)} minute(s) read`}
+        </div>
+
+
+    </div>
+  )
+}
+
+function Circle() {
+    return <div className="h-1 w-1 rounded-full bg-gray-500">
+
+    </div>
+}
+
+
+
+export default BlogCard
