@@ -14,9 +14,9 @@ const BlogCard = ({
     publishedDate
 }: BlogCardProps) => {
   return (
-    <div className="p-4 border-b border-gray-200 pb-4">
+    <div className="p-4 border-b border-gray-200 pb-4 min-w-lg">
         <div className="flex">
-           <div className="flex justify-center flex-col">
+           <div className=" h-5 w-5 ">
            <Avatar size={5} name={authorName} />
            </div>
             <div className="font-extralight text-gray-700 pl-2">
