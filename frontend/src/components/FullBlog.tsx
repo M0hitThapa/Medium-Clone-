@@ -6,9 +6,9 @@ import Avatar from "./Avatar"
 const FullBlog = ({blog}: {blog: Blog}) => {
   return <div>
     <Appbar />
- <div className="flex justify-center">
-       <div className="grid grid-cols-12 px-10 w-full  max-w-screen-xl pt-12">
-    <div className="col-span-8  ">
+ <div className="flex justify-center ">
+       <div className="grid grid-cols-12 px-12 w-full  max-w-screen-xl pt-12">
+    <div className="col-span-8   ">
         <div className="text-4xl font-extrabold ">
             {blog.title}
         </div>
@@ -20,7 +20,7 @@ const FullBlog = ({blog}: {blog: Blog}) => {
         </div>
 
     </div>
-    <div className="col-span-4  ">
+    <div className="col-span-4 px-4 ">
       <div className="text-slate-700 text-lg">
           Author
       </div>

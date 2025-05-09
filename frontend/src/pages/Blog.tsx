@@ -1,4 +1,5 @@
 import FullBlog from "../components/FullBlog";
+import FullBlogSkeleton from "../components/FullBlogSkeleton";
 import { useBlog } from "../hooks";
 import { useParams } from "react-router-dom";
 
@@ -10,7 +11,7 @@ const Blog = () => {
   });
   if(loading) {
     return <div>
-      loading...
+      <FullBlogSkeleton />
     </div>
   }
   return (
